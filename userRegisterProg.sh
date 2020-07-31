@@ -40,3 +40,13 @@ else
    echo Invalid
 fi
 
+#UC5
+read -p "Enter password to check validity:" password
+pat="^[[:upper:]][0-9][@$.#][a-zA-Z0-9]{5}$"
+if [[ $password =~ $pat ]]
+then
+   echo Valid
+else
+   echo Invalid
+fi
+
